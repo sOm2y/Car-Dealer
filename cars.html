@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI Free</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+      <script type="text/javascript"
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyE2dYNjF79jtr3SldJptQr9VbuqKRbck&sensor=true">
+    </script>
+    <script type="text/javascript">
+     $(document).ready(function() {
+
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(-34.397, 150.644),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+                            mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+});
+
+    </script>
+      
+      
+  </head>
+  <body>
+  
+      <!--********************header**********************-->
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<!--<div class="navbar-brand"> Tech site</div>-->
+				<a href="#" class="navbar-brand">Hot&Automative</a>
+
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class ="icon-bar"></span>
+					<span class ="icon-bar"></span>
+					<span class ="icon-bar"></span>
+				</button>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">					
+					<ul class="nav navbar-nav navbar-right">
+						<li ><a href="index.html">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">FaceBook</a></li>
+								<li><a href="#">Google+</a></li>
+								<li><a href="#">WeiBo</a></li>
+								<li><a href="#">LinkedIn</a></li>
+							</ul>
+						</li>
+						<li class="active"><a href="cars.html">Cars</a></li>
+						<li><a href="#contact" data-toggle="modal">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                
+                <div class="btn-group-vertical">
+                  <button type="button" class="btn btn-inverse">Toyota</button>
+                  <button type="button" class="btn btn-default">sssssssssssssssss</button>
+                  <div class="btn-group">
+                    <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      Toyota
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
+                      <li><a href="#">Corolla</a></li>
+                      <li><a href="#">Mark X</a></li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-default">BMW</button>
+                  <button type="button" class="btn btn-default">Subaru</button>
+                  <div class="btn-group">
+                    <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      Mazda
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop2">
+                      <li><a href="#">Axela</a></li>
+                      <li><a href="#">Antana</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      Honda
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3">
+                      <li><a href="#">Accord</a></li>
+                      <li><a href="#">Fit</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      Nissan
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop4">
+                      <li><a href="#">Tida</a></li>
+                      <li><a href="#">Teana</a></li>
+                    </ul>
+                  </div>
+                </div>
+			</div>
+            
+            
+            
+            <div class="col-sm-10">
+            
+            <div class="panel panel-default">
+              <!-- Default panel contents -->
+              
+              <!-- Table -->
+              <table class="table">
+                
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>
+                        <div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/300x200" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                     <div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/100%x180" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>  
+                    </td>
+                    <td><div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/100%x180" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>  
+                      </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                        <div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/300x200" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                     <div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/100%x180" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>  
+                    </td>
+                    <td><div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/100%x180" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>  
+                      </td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td>
+                        <div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/300x200" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                     <div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/100%x180" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>  
+                    </td>
+                    <td><div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/100%x180" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>  
+                      </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                        <div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/300x200" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                     <div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/100%x180" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>  
+                    </td>
+                    <td><div class="col-lg-10">
+                            <a href="#" class="thumbnail">
+                                <img data-src="holder.js/100%x180" src="img/audi_r8_gt_car-wide.jpg">
+                            </a>
+                        </div>  
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+            
+            <center><div class="pagination">
+            <ul>
+              <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              <li><a href="#fakelink">6</a></li>
+              <li><a href="#fakelink">7</a></li>
+              <li><a href="#fakelink">8</a></li>
+              <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+            </ul>
+          </div> <!-- /pagination --></center>
+            </div>
+            
+        </div>
+          
+
+</div>
+
+		<!--********************footer**********************-->
+		
+		<footer>
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-3">
+							
+							
+							<h6><a href="#">About us</a></h6>
+							<p>online cars bd Mobile  brokers, car spares, car else. we are using slider lightbox plugin for web and MobilT</p>
+							
+							
+						</div>
+
+
+						<div class="col-lg-3">
+							<font size="3">
+							
+							
+							<ul style="list-style-type: none;">
+								<li>
+									<h6><a href="#">Categery</a></h6>
+
+								</li>
+								<li><a href="#">Counpe</a></li>
+								<li><a href="#">Wagon</a></li>
+								<li><a href="#">Sedan</a></li>
+								<li><a href="#">Hatchback</a></li>
+								<li><a href="#">Suv</a></li>
+
+							</ul>
+							
+							</font>	
+						</div>	
+
+
+						<div class="col-lg-3">
+							
+							
+							<h6><a href="#">Social</a></h6>
+							<p>online cars bd Mobile  brokers, car spares, car else. we are using slider lightbox plugin for web and MobilT</p>
+							
+							
+						</div>		
+                        
+                       
+
+
+
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+<div class="container">
+			<center>
+			<ul style="list-style-type: none;">
+			<p>
+				<li>Power by <a href="http://blog.som2y.com"><em>sOm2y</em></a></li>
+				<small><li><a href="#">Hot&Automative &copy;</a></li></small>
+			</p>
+			</ul>
+			</center>
+				
+			</div>
+
+		<div class="modal fade" id="contact" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<form class="form-horizontal">
+						<div class="modal-header">
+							<h4>Contact Tech Site</h4>
+						</div>
+
+
+						<div class="modal-body">
+
+								<div class="form-group">
+									<label for="contact-email" class="col-lg-2 control-label">Email address</label>
+
+									<div class="col-lg-10">
+	  									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required="1">
+	  								</div>
+								</div>
+							
+
+
+							
+								<div class="form-group">
+									<label for="contact-name" class="col-lg-2 control-label">Titile</label>
+
+									<div class="col-lg-10">
+	  								<input type="text" class="form-control" id="title" placeholder="your title" required="1">
+	  								</div>
+								</div>
+							
+
+							
+								<div class="form-group">
+									<label for="contact-msg" class="col-lg-2 control-label">Message</label>
+
+									<div class="col-lg-10">
+									<textarea class="form-control" rows="8" placeholder="your message" required="1">
+										
+									</textarea>
+	  								</div>
+								</div>
+
+							
+
+						</div>
+						<div class="modal-footer">
+
+							<a class="btn btn-default" data-dismiss="modal">Close</a>
+						
+							<button class="btn btn-primary" type="submit">Send</button>
+							
+						</div>
+					</form>
+
+					
+				</div>
+			</div>
+		</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+  </body>
+</html>
